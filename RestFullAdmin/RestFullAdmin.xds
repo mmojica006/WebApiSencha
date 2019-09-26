@@ -1,0 +1,57 @@
+{
+    "name": "RestFullAdmin",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "5.1.3.61",
+            "frameworkVersion": "5.1.1.451"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "http://localhost:1841",
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "projectHasEnabledWebServer": true
+    },
+    "xdsVersion": "3.2.0",
+    "xdsBuild": 339,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "ext51",
+    "viewOrderMap": {
+        "view": [
+            "32bfd581-88f4-4324-8ddb-de89406ad7eb",
+            "e019cae3-4cd9-46c6-acdd-2816dd1a366b",
+            "dfe0deb3-7927-4772-b8a6-2028845375bf",
+            "fa7a3bbd-697d-4919-b4d9-20cc773dbed3",
+            "024c0966-a0aa-40d5-b015-3530c753c6a2",
+            "d9b795d9-602f-425d-a368-29fb912edc7b"
+        ],
+        "store": [
+            "eb2b7369-da7c-417a-92cc-8ddc39c3532a"
+        ],
+        "controller": [],
+        "model": [
+            "b01f8ab7-03e8-4e5f-a21c-07e2d9f1f987"
+        ],
+        "resource": [
+            "d543bf30-cefd-4290-94c3-4972feae3503",
+            "c21b7d3f-2501-47b5-ba14-b9a39ff07340"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

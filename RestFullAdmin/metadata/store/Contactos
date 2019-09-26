@@ -1,0 +1,16 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "Contactos",
+        "model": "Contacto",
+        "storeId": "Contactos"
+    },
+    "name": "MyStore",
+    "designerId": "eb2b7369-da7c-417a-92cc-8ddc39c3532a"
+}

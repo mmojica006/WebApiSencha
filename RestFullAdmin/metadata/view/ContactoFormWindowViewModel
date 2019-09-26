@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "contactoformwindow",
+        "designer|userClassName": "ContactoFormWindowViewModel"
+    },
+    "designerId": "024c0966-a0aa-40d5-b015-3530c753c6a2"
+}

@@ -1,0 +1,228 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "designer|userAlias": "contactoformwindow",
+        "designer|userClassName": "ContactoFormWindow",
+        "height": 210,
+        "layout": "fit",
+        "modal": true,
+        "title": "Formulario de Contacto",
+        "width": 592
+    },
+    "name": "MyWindow",
+    "designerId": "fa7a3bbd-697d-4919-b4d9-20cc773dbed3",
+    "viewControllerInstanceId": "d9b795d9-602f-425d-a368-29fb912edc7b",
+    "viewModelInstanceId": "024c0966-a0aa-40d5-b015-3530c753c6a2",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "title": ""
+            },
+            "name": "MyForm1",
+            "designerId": "735a073c-7e7e-4a39-8b27-3844eb87d1e6",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Nombre",
+                        "layout|anchor": "100%",
+                        "name": "Nombre"
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "75bdf7cd-9b47-4069-815b-19d3fc7507bb"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Correo",
+                        "layout|anchor": "100%",
+                        "name": "Correo"
+                    },
+                    "name": "MyTextField2",
+                    "designerId": "ab5076c3-cac6-4012-867c-e947d07649cc"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Teléfono",
+                        "layout|anchor": "100%",
+                        "name": "Telefono"
+                    },
+                    "name": "MyTextField3",
+                    "designerId": "4577017f-8bba-4bfd-bad2-6bbf0e54ec06"
+                },
+                {
+                    "type": "Ext.form.field.Checkbox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "boxLabel": "Activo",
+                        "fieldLabel": "",
+                        "layout|anchor": "100%",
+                        "name": "Activo"
+                    },
+                    "name": "MyCheckbox",
+                    "designerId": "50f520e4-1051-478c-a2f3-a5da6f9ca680"
+                }
+            ]
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "bottom"
+            },
+            "name": "MyToolbar1",
+            "designerId": "96172b2e-99ba-4848-8421-13c21d878361",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "text": "Guardar"
+                    },
+                    "name": "MyButton1",
+                    "designerId": "9d956934-da27-4aa2-8d91-26cdfc216da4",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onSaveButtonClick",
+                                "implHandler": [
+                                    "    var win = button.up('window'),",
+                                    "        form = win.down('form');",
+                                    "                console.log(form.getForm().getValues());",
+                                    "    var myModel = form.getRecord();",
+                                    "",
+                                    "    form.updateRecord(myModel);",
+                                    "        myModel.save({",
+                                    "            success: function(record, operation){",
+                                    "                record.commit();",
+                                    "            },",
+                                    "            failure: function(record, operation){",
+                                    "                Ext.Msg.alert('Ooops','Ha ocurrido un error en la actualización');",
+                                    "",
+                                    "            }",
+                                    "",
+                                    "        });",
+                                    "    form.up('window').close();",
+                                    ""
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onSaveButtonClick",
+                            "designerId": "28404458-8b3e-43c8-8301-244a22601f18"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "text": "Cancelar"
+                    },
+                    "name": "MyButton2",
+                    "designerId": "4140bdd3-b1ac-4e59-8d6d-ccf0a7acac00",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onCancelButtonClick",
+                                "implHandler": [
+                                    "     button.up('window').close();       "
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onCancelButtonClick",
+                            "designerId": "f3394bac-a6d1-4b22-a7c3-7d4f5d363d3d"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.toolbar.Fill",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null
+                    },
+                    "name": "MyFill",
+                    "designerId": "a8f10c5f-5aab-43a5-8447-db54ee3d16f6"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "text": "Eliminar"
+                    },
+                    "name": "MyButton3",
+                    "designerId": "2ded3f6c-9fa6-4246-b32e-d5314ba65ad8"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Contacto",
+        "idProperty": "Id"
+    },
+    "name": "MyModel",
+    "designerId": "b01f8ab7-03e8-4e5f-a21c-07e2d9f1f987",
+    "cn": [
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "Id"
+            },
+            "name": "MyField",
+            "designerId": "aaa90829-5b84-4d0e-8a4a-b49f8872ca4d"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "Nombre"
+            },
+            "name": "MyField1",
+            "designerId": "b3033183-8e85-47be-8ae7-6015b861d8d6"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "Correo"
+            },
+            "name": "MyField2",
+            "designerId": "850f4635-63b3-4021-9217-5dc1c1242d32"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "Telefono"
+            },
+            "name": "MyField3",
+            "designerId": "7ec71cf8-f1b6-4d5a-b73e-769eb32174f8"
+        },
+        {
+            "type": "Ext.data.field.Boolean",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "Activo"
+            },
+            "name": "MyBoolean",
+            "designerId": "0d7ee084-f3e0-47db-b594-0f2ac5530e07"
+        },
+        {
+            "type": "Ext.data.proxy.Rest",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://localhost:57288/api/Contactoes/"
+            },
+            "name": "MyRestProxy",
+            "designerId": "23f7d8cc-e3f6-4250-95af-53298aa271f4",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader",
+                    "designerId": "76a7fcb5-5f8c-492b-9d5f-de163fd9b697"
+                }
+            ]
+        }
+    ]
+}

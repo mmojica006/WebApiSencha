@@ -1,0 +1,23 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Contacto"
+        ],
+        "name": "RestFullAdmin",
+        "stores": [
+            "Contactos"
+        ],
+        "views": [
+            "Main",
+            "ContactoFormWindow"
+        ]
+    },
+    "name": "Application",
+    "designerId": "application"
+}
